@@ -21,15 +21,3 @@
         init: _init_
     }
 })();
-
-function transformJson(rdkData){
-    var result = [];
-    rdkData.data.forEach(function(rowData){
-        var item = {};
-        rdkData.field.forEach(function(rowDataField,index){
-            item[rowDataField] = rowData[index];
-        });
-        result.push(item);
-    });
-    return result;
-}
