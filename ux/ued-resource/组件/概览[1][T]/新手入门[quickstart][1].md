@@ -49,17 +49,19 @@ Jigsaw的组件大大弱化了开发者的 HTML5 / CSS3 的技能要求，因此
     - [tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
     - [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)
 
-## Angular相关知识
+## Angular
 
-Angular的概念很多，知识点也不少，但值得庆幸是你无需学习完所有的概念才能开工，只要学习和理解**模块**/**组件**两大概念，即可开工干活了，如果你要开发的是一个SPA（单页应用），那么还需要再学习**路由**的相关知识。
+Angular的概念很多，知识点也不少，但值得庆幸是你无需学习完所有的概念才能开工，只要学习和理解**模块**和**组件**两大概念，即可开工干活了，如果你要开发的是一个SPA（单页应用），那么还需要再学习**路由**的相关知识。注意，ES6、TS、Angular都有各自的模块概念，初学者容易混淆，[这个文章](https://angular.cn/guide/architecture#模块)做一些阐述。
 
-Angular所有概念的学习材料，都可以在 <https://angular.cn/docs> 找到，只要耐心将这里列出的知识点都阅读一两遍，就可以完全满足日常开发所需，多数bug也可以在这里找到答案。个人建议不要使用搜索引擎去搜罗文章了，大多没啥价值。有问题需要询问的话，可以到[这里](http://ngfans.net)发帖询问，我会在上面帮你解答。
+Angular所有概念的学习材料，都可以在 <https://angular.cn/docs> 找到。这里提供的是一站式的所有资料，因此别去搜索引擎找了，多数没啥价值。只要耐心将这里列出的知识点都阅读一两遍，就可以完全满足日常开发所需，多数bug也可以在这里找到答案。**强烈建议**初学者优先阅读官方的[《英雄指南》](https://angular.cn/tutorial)这一系列文章，它以从零开发一个简单SPA为线索介绍了Angular的所有基础知识。学习完了[《英雄指南》](https://angular.cn/tutorial)之后，再按需阅读“核心知识”章节的内容。这个过程约需要花掉2到3天的时间。
 
-推荐一下大漠穷秋的[入门视频](http://ngfans.net/category/2/videos)，非常棒，推荐自学能力弱的同学仔细观看，动手编码！
+以下是其他学习途径：
 
-这里是大漠收集的[优质学习资源](http://ngfans.net/topic/5/post)，东西较多，建议按照我的推荐挑选内容学习。
+- 有问题需要询问的话，可以到[这里](http://ngfans.net)发帖询问，我会在上面帮你解答；
+- 推荐一下大漠穷秋的[入门视频](http://ngfans.net/category/2/videos)，非常棒，推荐自学能力弱的同学仔细观看，动手编码；
+- 这里是一些[优质学习资源](http://ngfans.net/topic/5/post)，东西较多，建议有了一定基础之后再按需学习。
 
-## Jigsaw相关知识
+## Jigsaw
 
 待补充。。。
 
