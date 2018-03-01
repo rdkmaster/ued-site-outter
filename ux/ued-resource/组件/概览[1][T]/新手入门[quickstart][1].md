@@ -27,9 +27,9 @@ Jigsaw的组件大大弱化了开发者的 HTML5 / CSS3 的技能要求，因此
 
 所有基于Angular或者Jigsaw的页面都必须采用[TypeScript](https://www.tslang.cn)语言编码，如果你还不了解它，那请先[学习](https://www.tslang.cn/docs/home.html)一下这门语言。
 
-莫慌！如果你已经熟悉了ES6，那只要简单的浏览一下TS的语法即可，无需专门学习；甚至你都可以跳过这一步，在以后的日子里边写代码边学也可以。
+莫慌！如果你已经熟悉了ES6，那只要简单的浏览一下TS的语法即可，无需专门花时间学习，甚至你都可以跳过这一步，在以后的日子里边写代码边学也可以。
 
-如果你非常忙，那么我建议你着重阅读如下的小节：
+如果你非常忙而没能通读所有内容，那么我建议你着重阅读如下的小节：
 
 - 类型相关，这部分是TS的精华
     - [基础类型](https://www.tslang.cn/docs/handbook/basic-types.html)，建议仔细阅读；
@@ -49,17 +49,51 @@ Jigsaw的组件大大弱化了开发者的 HTML5 / CSS3 的技能要求，因此
     - [tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
     - [编译选项](https://www.tslang.cn/docs/handbook/compiler-options.html)
 
+### RxJS相关知识
+
+Angular采用RxJS替代Promise来处理异步，把Promise比作鸟枪的话，那么RxJS就是大炮了，RxJS的能力和可用范围，比Promise强的不是一点两点。但是凡事总有两面性，强大带来的是需要额外的上手成本。幸运的是，我们不需要掌握RxJS所有知识，只要了解一点点就能玩下去。我把这些开发angular页面必须掌握的东西列举如下：
+
+#### `subscribe()`与`unsubscribe()`
+
+Angular的整个事件机制是建立在RxJS的基础上的，因此凡是涉及到事件、异步的功能，都离不开调用这2个方法来注册和反注册监听器。
+
+Angular里涉及到的有
+    - **EventEmitter 这是Angular里定义事件所必须用到的类，相关文章：<https://angular.io/guide/observables-in-angular#event-emitter>**
+    - **[HttpClient](https://angular.cn/guide/http)的get/put/post/delete/request等方法的返回值。**
+    - Async pipe，异步管道，相关文章：<https://angular.io/guide/observables-in-angular#async-pipe>
+    - Router变化的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#router>
+    - 响应式表单的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#reactive-forms>
+
+加粗的EventEmitter/HttpClient这2个是必学内容，其他的按需，用到的时候再看也来得及。
+
+#### 常用的RxJS操作符（operators）
+
+这是RxJS最神奇最牛逼的功能，[RxJS操作符](http://cn.rx.js.org/manual/overview.html#h213)非常非常多，但是需要了解的并不多，列举如下
+    - map [HttpClient](https://angular.cn/guide/http)里常常用到的功能，[详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-map)
+    - debounceTime [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
+    - do [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-do)
+    - retry [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-retry)
+
+当然，和其他所有知识一样，对他们了解、掌握的越多，对你写代码越有利！
+
+
+
+## IDE选择建议
+
+工欲善其事必先利其器，挑选一个好的IDE你就已经迈出了坚实的一步，[WebStorm](https://www.jetbrains.com/webstorm/)和[VSCode](https://code.visualstudio.com/)都是不错的选择。
+
 ## Angular
 
-Angular的概念很多，知识点也不少，但值得庆幸是你无需学习完所有的概念才能开工，只要学习和理解**模块**和**组件**两大概念，即可开工干活了，如果你要开发的是一个SPA（单页应用），那么还需要再学习**路由**的相关知识。注意，ES6、TS、Angular都有各自的模块概念，初学者容易混淆，[这个文章](https://angular.cn/guide/architecture#模块)做一些阐述。
+Angular的概念很多，知识点也不少，但值得庆幸是你无需学习完所有的概念才能开工，只要学习和理解“**模块**”和“**组件**”两大概念，即可开工干活了，如果你要开发的是一个SPA（单页应用），那么还需要再学习“**路由**”的相关知识。
 
 Angular所有概念的学习材料，都可以在 <https://angular.cn/docs> 找到。这里提供的是一站式的所有资料，因此别去搜索引擎找了，多数没啥价值。只要耐心将这里列出的知识点都阅读一两遍，就可以完全满足日常开发所需，多数bug也可以在这里找到答案。**强烈建议**初学者优先阅读官方的[《英雄指南》](https://angular.cn/tutorial)这一系列文章，它以从零开发一个简单SPA为线索介绍了Angular的所有基础知识。学习完了[《英雄指南》](https://angular.cn/tutorial)之后，再按需阅读“核心知识”章节的内容。这个过程约需要花掉2到3天的时间。
 
-以下是其他学习途径：
+以下是其他学习途径/文章：
 
-- 有问题需要询问的话，可以到[这里](http://ngfans.net)发帖询问，我会在上面帮你解答；
+- 有问题需要询问的话，可以到 [Angular开发者](http://ngfans.net) 网站发帖询问，我会在上面帮你解答；
 - 推荐一下大漠穷秋的[入门视频](http://ngfans.net/category/2/videos)，非常棒，推荐自学能力弱的同学仔细观看，动手编码；
-- 这里是一些[优质学习资源](http://ngfans.net/topic/5/post)，东西较多，建议有了一定基础之后再按需学习。
+- 这里是一些[优质学习资源](http://ngfans.net/topic/5/post)，东西较多，建议有了一定基础之后再按需学习；
+- ES6、TS、Angular都有各自的模块概念，初学者容易混淆，如果你也老虎老鼠傻傻分不清楚，那么请读一下[这个文章](https://angular.cn/guide/architecture#模块)；
 
 ## Jigsaw
 
