@@ -58,21 +58,23 @@ Angular采用RxJS替代Promise来处理异步，把Promise比作鸟枪的话，�
 Angular的整个事件机制是建立在RxJS的基础上的，因此凡是涉及到事件、异步的功能，都离不开调用这2个方法来注册和反注册监听器。
 
 Angular里涉及到的有
-    - **EventEmitter 这是Angular里定义事件所必须用到的类，相关文章：<https://angular.io/guide/observables-in-angular#event-emitter>**
-    - **[HttpClient](https://angular.cn/guide/http)的get/put/post/delete/request等方法的返回值。**
-    - Async pipe，异步管道，相关文章：<https://angular.io/guide/observables-in-angular#async-pipe>
-    - Router变化的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#router>
-    - 响应式表单的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#reactive-forms>
+
+- **EventEmitter 这是Angular里定义事件所必须用到的类，相关文章：<https://angular.io/guide/observables-in-angular#event-emitter>**
+- **[HttpClient](https://angular.cn/guide/http)的get/put/post/delete/request等方法的返回值。**
+- Async pipe，异步管道，相关文章：<https://angular.io/guide/observables-in-angular#async-pipe>
+- Router变化的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#router>
+- 响应式表单的相关事件，相关文章：<https://angular.io/guide/observables-in-angular#reactive-forms>
 
 加粗的EventEmitter/HttpClient这2个是必学内容，其他的按需，用到的时候再看也来得及。
 
 #### 常用的RxJS操作符（operators）
 
 这是RxJS最神奇最牛逼的功能，[RxJS操作符](http://cn.rx.js.org/manual/overview.html#h213)非常非常多，但是需要了解的并不多，列举如下
-    - map [HttpClient](https://angular.cn/guide/http)里常常用到的功能，[详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-map)
-    - debounceTime [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
-    - do [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-do)
-    - retry [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-retry)
+
+- map [HttpClient](https://angular.cn/guide/http)里常常用到的功能，[详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-map)
+- debounceTime [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-debounceTime)
+- do [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-do)
+- retry [详见这里](http://cn.rx.js.org/class/es6/Observable.js~Observable.html#instance-method-retry)
 
 当然，和其他所有知识一样，对他们了解、掌握的越多，对你写代码越有利！
 
