@@ -1,0 +1,234 @@
+[
+    {
+        "category": "开始", "nodes": [
+            {
+                "label": "新手入门", "router": "guide", "subRouter": "quick-start", "docOnly": true,
+                "api": "rdk/service/app/ued/server/components/norm?content=quick-start.md"
+            },
+            {
+                "label": "变更记录", "router": "guide", "subRouter": "change-log", "docOnly": true,
+                "api": "/jigsaw/source/CHANGELOG.md"
+            }
+        ]
+    },
+    {
+        "category": "布局 / 模板", "nodes": [
+            {
+                "label": "盒子布局", "router": "box-layout",
+                "api": "/jigsaw/doc/fragments/component/JigsawBox.html"
+            },
+            {
+                "label": "动态布局", "router": "dynamic-layout",
+                "api": "/jigsaw/doc/fragments/component/JigsawEditableBox.html"
+            },
+            {
+                "label": "AdminLTE", "router": "admin-lte", "docOnly": true,
+                "api": "rdk/service/app/ued/server/components/norm?content=admin-lte.md"
+            }
+        ]
+    },
+    {
+        "category": "组件", "nodes": [
+            {
+                "label": "Alert 通知对话框", "router": "alert", "demo": "alert",
+                "api": "/jigsaw/doc/fragments/component/JigsawAlert.html"
+            },
+            {
+                "label": "Button 按钮", "router": "button", "demo": "button",
+                "api": "/jigsaw/doc/fragments/component/JigsawButton.html"
+            },
+            {
+                "label": "Card 卡片", "router": "card",
+                "api": ""
+            },
+            {
+                "label": "Cascade 级联选择", "router": "cascade",
+                "api": ""
+            },
+            {
+                "label": "Checkbox 复选框", "router": "checkbox",
+                "api": "/jigsaw/doc/fragments/component/JigsawCheckBox.html"
+            },
+            {
+                "label": "Collapse 折叠", "router": "collapse",
+                "api": "/jigsaw/doc/fragments/component/JigsawCollapse.html"
+            },
+            {
+                "label": "Combo Select 组合框", "router": "combo-select",
+                "api": "/jigsaw/doc/fragments/component/JigsawComboSelect.html"
+            },
+            {
+                "label": "Dialog 对话框", "router": "dialog",
+                "api": "/jigsaw/doc/fragments/component/JigsawDialog.html"
+            },
+            {
+                "label": "Drawer 抽屉", "router": "drawer",
+                "api": "/jigsaw/doc/fragments/component/JigsawDrawer.html"
+            },
+            {
+                "label": "Fish Bone 鱼骨图", "router": "fish-bone",
+                "api": "/jigsaw/doc/fragments/component/JigsawFishBone.html"
+            },
+            {
+                "label": "Form 表单", "router": "form",
+                "api": "rdk/service/app/ued/server/components/norm?content=form.md"
+            },
+            {
+                "label": "Graph 图形", "router": "graph",
+                "api": "/jigsaw/doc/fragments/component/JigsawGraph.html"
+            },
+            {
+                "label": "Icon 图标", "router": "icon",
+                "api": ""
+            },
+            {
+                "label": "Input 输入框", "router": "input",
+                "api": "/jigsaw/doc/fragments/component/JigsawInput.html"
+            },
+            {
+                "label": "List 列表", "router": "list",
+                "api": "/jigsaw/doc/fragments/component/JigsawList.html"
+            },
+            {
+                "label": "Loading 加载中", "router": "loading",
+                "api": "/jigsaw/doc/fragments/component/JigsawLoading.html"
+            },
+            {
+                "label": "Notification 通知提醒框", "router": "notification",
+                "api": "/jigsaw/doc/fragments/component/JigsawNotification.html"
+            },
+            {
+                "label": "Pagination 分页", "router": "pagination",
+                "api": "/jigsaw/doc/fragments/component/JigsawPagination.html"
+            },
+            {
+                "label": "Progress Bar 进度条", "router": "progress-bar",
+                "api": ""
+            },
+            {
+                "label": "Radio 单选框", "router": "radio-group",
+                "api": "/jigsaw/doc/fragments/component/JigsawRadioGroup.html"
+            },
+            {
+                "label": "Range Time 时间范围", "router": "range-time",
+                "api": "/jigsaw/doc/fragments/component/JigsawRangeTime.html"
+            },
+            {
+                "label": "Scrollbar 滚动条", "router": "scrollbar",
+                "api": "/jigsaw/doc/fragments/component/JigsawScrollbar.html"
+            },
+            {
+                "label": "Select 下拉选择", "router": "select",
+                "api": "/jigsaw/doc/fragments/component/JigsawSelect.html"
+            },
+            {
+                "label": "Signaling Chart 信令流程图", "router": "signaling-chart",
+                "api": "rdk/service/app/ued/server/components/norm?content=signaling-chart.md"
+            },
+            {
+                "label": "Slider 滑动条", "router": "slider",
+                "api": "/jigsaw/doc/fragments/component/JigsawSlider.html"
+            },
+            {
+                "label": "Steps 步骤条", "router": "steps",
+                "api": "/jigsaw/doc/fragments/component/JigsawSteps.html"
+            },
+            {
+                "label": "Switch 开关", "router": "switch",
+                "api": "/jigsaw/doc/fragments/component/JigsawSwitch.html"
+            },
+            {
+                "label": "Tab 选项卡", "router": "tabs",
+                "api": "/jigsaw/doc/fragments/component/JigsawTab.html"
+            },
+            {
+                "label": "Table 表格", "router": "table",
+                "api": "/jigsaw/doc/fragments/component/JigsawTable.html"
+            },
+            {
+                "label": "Tag 标签", "router": "tag",
+                "api": "/jigsaw/doc/fragments/component/JigsawTag.html"
+            },
+            {
+                "label": "Tile 平铺", "router": "tile",
+                "api": "/jigsaw/doc/fragments/component/JigsawTile.html"
+            },
+            {
+                "label": "Time 时间点", "router": "time",
+                "api": "/jigsaw/doc/fragments/component/JigsawTime.html"
+            },
+            {
+                "label": "Tooltip 文字提示", "router": "tooltip",
+                "api": "/jigsaw/doc/fragments/directive/JigsawTooltip.html"
+            },
+            {
+                "label": "Tree 树", "router": "tree",
+                "api": "/jigsaw/doc/fragments/component/JigsawTreeExt.html"
+            },
+            {
+                "label": "Viewport 视口", "router": "viewport",
+                "api": "/jigsaw/doc/fragments/component/JigsawViewport.html"
+            },
+            {
+                "label": "WebGIS", "router": "webgis",
+                "api": ""
+            }
+        ]
+    },
+    {
+        "category": "服务 / 通用功能", "nodes": [
+            {
+                "label": "国际化", "router": "i18n",
+                "api": "rdk/service/app/ued/server/components/norm?content=i18n.md"
+            },
+            {
+                "label": "前后端通信", "router": "data-encapsulation",
+                "api": "/jigsaw/doc/fragments/interface/IComponentData.html"
+            },
+            {
+                "label": "TimeService 时间相关功能", "router": "time-service",
+                "api": "/jigsaw/doc/fragments/class/TimeService.html"
+            },
+            {
+                "label": "PopupService 弹出服务", "router": "popup",
+                "api": "/jigsaw/doc/fragments/injectable/PopupService.html"
+            },
+            {
+                "label": "LoadingService 加载中服务", "router": "loading",
+                "api": "/jigsaw/doc/fragments/class/LoadingService.html"
+            },
+            {
+                "label": "ChartIcon 图形化图标", "router": "chart-icon",
+                "api": "/jigsaw/doc/fragments/class/ChartIconFactory.html"
+            }
+        ]
+    },
+    {
+        "category": "指令", "nodes": [
+            {
+                "label": "内联HTML", "router": "trusted-html",
+                "api": "/jigsaw/doc/fragments/directive/JigsawTrustedHtml.html"
+            },
+            {
+                "label": "拖拽", "router": "drag-drop",
+                "api": "/jigsaw/doc/fragments/directive/JigsawDraggable.html"
+            }
+        ]
+    },
+    {
+        "category": "资源", "nodes": [
+            {
+                "label": "API手册", "router": "api", "subRouter": "list", "docOnly": true
+            },
+            {
+                "label": "图标", "router": "icon-resource",
+                "api": "rdk/service/app/ued/server/components/norm?content=icon.md"
+            },
+            {
+                "label": "地理信息", "target": "_blank",
+                "href": "http://10.9.233.68:9953/webgis/default/index.html"
+            }
+        ]
+    }
+]
+

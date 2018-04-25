@@ -1,13 +1,14 @@
 /**
  * Created by 6396000843 on 2017/8/17.
  */
+ var uedPath;
+if (!uedPath) {
+    uedPath = File.loadProperty('app/ued/ued.cfg').getProperty('ued_resource_path');
+}
+
 (function() {
-    var utils = require('$svr/util/util.js');
     return function(request, script) {
-        var sql = "select a.*,b.label as parentLabel,b.orderByNum as parentOrder  from  ued_component_menu_nav as a LEFT JOIN ued_component_menu_nav as b  on a.parent=b.menuId ORDER BY level,orderByNum"
-        //var sql = "select * from  ued_component_menu_nav ORDER BY level,orderByNum";
-        var menuLists = Data.fetch(sql);
-        menuLists=utils.transformJson(menuLists);
-        return menuLists
+        var path = uedPath + '/ued-resource/开发/menu.json';
+        return File.readString(path);
     }
 })();

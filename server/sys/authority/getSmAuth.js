@@ -13,20 +13,17 @@
         }
         var pid = utils.formatParamer(request.pid);
 
-        var sql = "SELECT DISTINCT"
-        + " c.username,c.uId"
-        + " FROM"
-        + " ued_sys_role_privilege AS a,"
-        + " ued_sys_user_team AS b,"
-        + " ued_sys_user AS c,"
-        + " xplan_project_info AS d"
-        + " WHERE"
-        + " (a.resourcesID = '"+pid+"'"
-        + " AND a.roleID = b.teamID"
-        + " AND b.uId = c.uId"
-        + " AND c.roles ='SM')"
-        + " or"
-        + " (d.SerialNum ='"+pid+"' AND d.creatorId = c.uId)";
+        var sql = "SELECT DISTINCT p.username, p.uId"
+        +" FROM"
+            +"  ("
+            +" SELECT c.username,c.uId"
+            +" FROM ued_sys_role_privilege AS a,"
+            +" ued_sys_user_team AS b,"
+            +" ued_sys_user AS c"
+            +" WHERE a.resourcesID = '"+pid+"' AND a.roleID = b.teamID AND b.uId = c.uId AND c.roles = 'SM' UNION ALL"
+            +" SELECT u.username,u.uId"
+            +" FROM xplan_project_info d, ued_sys_user u"
+            +" WHERE d.SerialNum = '"+pid+"' AND u.uId = d.creatorId) p";
          var b = Data.fetch(sql);
          b = utils.transformJson(b);
         return b

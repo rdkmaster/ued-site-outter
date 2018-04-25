@@ -1,23 +1,20 @@
 (function() {
-    var utils = require('$svr/util/util.js');
-    var configFile=File.loadProperty("app/ued/ued.cfg");
+    var resourcePath,rdkPath,name,name1,a,result,utils,configFile;
+    utils = require('$svr/util/util.js');
+    configFile=File.loadProperty("app/ued/ued.cfg");
     return function(request, script) {
-        if(!request.url) {
-            return "请传递参数: url";
-        }
-        var resourcePath=configFile.getProperty("ued_resource_path");
-        var rdkPath=configFile.getProperty("ued_site_path");
-        var url = utils.formatParamer(decodeURIComponent(request.url));
-
+         resourcePath=configFile.getProperty("ued_resource_path");
+         rdkPath=configFile.getProperty("ued_site_path");
         if(!request.name) {
             return "请传递参数: name";
         }
-        var name = utils.formatParamer(decodeURIComponent(request.name));
 
-        var name1 ="原型-"+ name.replace(/\[.+\]/,"");
-        var a = resourcePath+"/ued-resource/项目/"+name+"/2原型";
-        Shell.execute("sh "+rdkPath+"/rdk/app/ued/build/scripts/zip.sh "+a+" "+name1, 1);
-        return "sh "+rdkPath+"/rdk/app/ued/build/scripts/zip.sh "+a+" "+name1
-    }
+        name = utils.formatParamer(decodeURIComponent(request.name));
+        name1 ="原型-"+ name.replace(/\[.+\]/,"");
+        a = resourcePath+"/ued-resource/项目/"+name+"/2原型";
+        result = Shell.execute("sh "+rdkPath+"/rdk/app/ued/build/scripts/zip.sh "+a+" "+name1, 1);
+
+        return !!result?true:false;
+    };
 
 })();

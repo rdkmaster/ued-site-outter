@@ -2,7 +2,6 @@
     var utils = require('$svr/util/util.js');
 
     return function (request, script) {
-        log(!!request.uid,"+++++++++++++++");
         if(!!request.uid){
             var uid = utils.formatParamer(request.uid)
         }else{
@@ -10,14 +9,14 @@
             if (!currentUser) {
                 return '请登录再使用'
             }
-            log(uid,"+++++++++++++++++++++");
             uid = utils.formatParamer(currentUser.uid);
         }
-        log(uid,"+++++++++++++++++++++")
         var a=Rest.get("http://api.zte.com.cn/api/zte-km-icenter-address/v1/rest/user/queryUserCardList",{"curEmployeeShortId":"","employeeShortIds":uid},{"curEmployeeShortId":"","employeeShortIds":uid});
         var result = JSON.parse(a).bo;
         if(!result || result.length == 0){
-            return "中兴外部用户，没有此项权限";
+            return {
+                data:"中兴外部用户，没有此项权限"
+            };
         }
 
        return {

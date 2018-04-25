@@ -1,1 +1,41 @@
-<!doctype html><html lang="en" style="height: 100%"><head><meta charset="utf-8"><title>ZTE-UED</title><meta name="description" content="ZTE大数据UED网站是融合设计、组件、开发等综合能力的门户网站"><meta name="keyword" content="UED,Angular UI,设计规范,angular组件,Jigsaw,RDK,"><meta name="viewport" content="width=1226"><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.fd937abfaa216f13ad66.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.c669015dd2abc48281d8.bundle.js"></script><script type="text/javascript" src="polyfills.cdcd7f41f2c09ddc92af.bundle.js"></script><script type="text/javascript" src="scripts.f8beb868efe19b281351.bundle.js"></script><script type="text/javascript" src="main.552879fee79da72ef654.bundle.js"></script></body></html>
+<!doctype html><html lang="en" style="height: 100%"><head><meta charset="utf-8"><title>ZTE-UED</title><meta name="description" content="ZTE大数据UED网站是融合设计、组件、开发等综合能力的门户网站"><meta name="keyword" content="UED,Angular UI,设计规范,angular组件,Jigsaw,RDK,"><meta name="viewport" content="width=1226"><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.b1034ce0bdde62bb2f5c.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><!-- Matomo --><script type="text/javascript">function getlocalStorage(key) { //读取cookies: 系统火狐没有对应的UID cookies
+      try {
+        var userInfo = JSON.parse(localStorage[key]);
+
+        if(!userInfo|| userInfo == null) return ""; // 如果没有值,返回空
+
+        return userInfo.uid;
+      } catch (e) { // 报错返回空.
+          return "";
+      }
+    }
+
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    // 取得默认的用户名.
+    var uId = getlocalStorage("currentUser");
+
+    if(uId) {
+      _paq.push(['setUserId', uId]);
+    }
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+
+    // 判断正式环境和测试环境.
+    var port = window.location.port;
+    var siteId = 0;  // 默认不监控本地调试的数据
+    if(!port|| port == '80') { // 端口为空, 默认80端口, 为正式环境.
+      siteId = '1';
+    } else if(port == "40080") { // 测试环境40080.
+      siteId = '3';
+    }
+
+    if(siteId) { // 只有 正式和 40080 会进行监控.
+      (function() {
+        var u="//10.9.233.35:8008/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', siteId]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    }</script><!-- End Matomo Code --><script type="text/javascript" src="inline.0153d6a44daddb54dbd7.bundle.js"></script><script type="text/javascript" src="polyfills.35909c4c61725027eda8.bundle.js"></script><script type="text/javascript" src="scripts.f8beb868efe19b281351.bundle.js"></script><script type="text/javascript" src="main.fd708f1e99dd06c84292.bundle.js"></script></body></html>
