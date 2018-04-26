@@ -14,11 +14,11 @@
     {
         "category": "布局 / 模板", "nodes": [
             {
-                "label": "盒子布局", "router": "box-layout",
+                "label": "盒子布局", "router": "box",
                 "api": "/jigsaw/doc/fragments/component/JigsawBox.html"
             },
             {
-                "label": "动态布局", "router": "dynamic-layout",
+                "label": "动态布局", "router": "editable-box",
                 "api": "/jigsaw/doc/fragments/component/JigsawEditableBox.html"
             },
             {
@@ -194,7 +194,7 @@
                 "api": "/jigsaw/doc/fragments/injectable/PopupService.html"
             },
             {
-                "label": "LoadingService 加载中服务", "router": "loading",
+                "label": "LoadingService 加载中服务", "router": "loading-service",
                 "api": "/jigsaw/doc/fragments/class/LoadingService.html"
             },
             {
