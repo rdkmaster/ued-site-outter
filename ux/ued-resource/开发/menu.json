@@ -3,7 +3,7 @@
         "category": "开始", "nodes": [
             {
                 "label": "新手入门", "router": "guide", "subRouter": "quick-start", "docOnly": true,
-                "api": "rdk/service/app/ued/server/components/norm?content=quick-start.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=quick-start.md"
             },
             {
                 "label": "变更记录", "router": "guide", "subRouter": "change-log", "docOnly": true,
@@ -23,19 +23,23 @@
             },
             {
                 "label": "AdminLTE", "router": "admin-lte", "docOnly": true,
-                "api": "rdk/service/app/ued/server/components/norm?content=admin-lte.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=admin-lte.md"
             }
         ]
     },
     {
         "category": "组件", "nodes": [
             {
-                "label": "Alert 通知对话框", "router": "alert", "demo": "alert",
+                "label": "Alert 通知对话框", "router": "alert",
                 "api": "/jigsaw/doc/fragments/component/JigsawAlert.html"
             },
             {
-                "label": "Button 按钮", "router": "button", "demo": "button",
+                "label": "Button 按钮", "router": "button",
                 "api": "/jigsaw/doc/fragments/component/JigsawButton.html"
+            },
+            {
+                "label": "Button 按钮栏", "router": "button-bar",
+                "api": "/jigsaw/doc/fragments/component/JigsawButtonBar.html"
             },
             {
                 "label": "Card 卡片", "router": "card",
@@ -43,7 +47,7 @@
             },
             {
                 "label": "Cascade 级联选择", "router": "cascade",
-                "api": ""
+                "api": "/jigsaw/doc/fragments/component/JigsawCascade.html"
             },
             {
                 "label": "Checkbox 复选框", "router": "checkbox",
@@ -71,7 +75,7 @@
             },
             {
                 "label": "Form 表单", "router": "form",
-                "api": "rdk/service/app/ued/server/components/norm?content=form.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=form.md"
             },
             {
                 "label": "Graph 图形", "router": "graph",
@@ -79,7 +83,7 @@
             },
             {
                 "label": "Icon 图标", "router": "icon",
-                "api": ""
+                "api": "/jigsaw/doc/fragments/component/JigsawIcon.html"
             },
             {
                 "label": "Input 输入框", "router": "input",
@@ -90,12 +94,20 @@
                 "api": "/jigsaw/doc/fragments/component/JigsawList.html"
             },
             {
+                "label": "List 列表Lite", "router": "list-lite",
+                "api": "/jigsaw/doc/fragments/component/JigsawListLite.html"
+            },
+            {
                 "label": "Loading 加载中", "router": "loading",
                 "api": "/jigsaw/doc/fragments/component/JigsawLoading.html"
             },
             {
                 "label": "Notification 通知提醒框", "router": "notification",
                 "api": "/jigsaw/doc/fragments/component/JigsawNotification.html"
+            },
+            {
+                "label": "Numeric Input 数字输入框", "router": "numeric-input",
+                "api": "/jigsaw/doc/fragments/component/JigsawNumericInput.html"
             },
             {
                 "label": "Pagination 分页", "router": "pagination",
@@ -123,7 +135,7 @@
             },
             {
                 "label": "Signaling Chart 信令流程图", "router": "signaling-chart",
-                "api": "rdk/service/app/ued/server/components/norm?content=signaling-chart.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=signaling-chart.md"
             },
             {
                 "label": "Slider 滑动条", "router": "slider",
@@ -154,6 +166,10 @@
                 "api": "/jigsaw/doc/fragments/component/JigsawTile.html"
             },
             {
+                "label": "Tile 平铺Lite", "router": "tile-lite",
+                "api": "/jigsaw/doc/fragments/component/JigsawTileLite.html"
+            },
+            {
                 "label": "Time 时间点", "router": "time",
                 "api": "/jigsaw/doc/fragments/component/JigsawTime.html"
             },
@@ -164,6 +180,10 @@
             {
                 "label": "Tree 树", "router": "tree",
                 "api": "/jigsaw/doc/fragments/component/JigsawTreeExt.html"
+            },
+            {
+                "label": "Upload 上传", "router": "upload",
+                "api": "/jigsaw/doc/fragments/component/JigsawUpload.html"
             },
             {
                 "label": "Viewport 视口", "router": "viewport",
@@ -179,7 +199,7 @@
         "category": "服务 / 通用功能", "nodes": [
             {
                 "label": "国际化", "router": "i18n",
-                "api": "rdk/service/app/ued/server/components/norm?content=i18n.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=i18n.md"
             },
             {
                 "label": "前后端通信", "router": "data-encapsulation",
@@ -222,11 +242,11 @@
             },
             {
                 "label": "图标", "router": "icon-resource",
-                "api": "rdk/service/app/ued/server/components/norm?content=icon.md"
+                "api": "/rdk/service/app/ued/server/components/norm?content=icon.md"
             },
             {
                 "label": "地理信息", "target": "_blank",
-                "href": "http://10.9.233.68:9953/webgis/default/index.html"
+                "href": "http://10.9.236.132:26180/webgis/default/index.html"
             }
         ]
     }
