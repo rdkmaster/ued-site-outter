@@ -10,6 +10,8 @@ Jigsaw的组件大大弱化了开发者的 HTML5 / CSS3 的技能要求，因此
 
 ### ES6相关知识
 
+[点击查看ES6基础知识](/vmax-studio/awade/docs/basic-knowledge/es6-basic)
+
 现代化网页开发必备技能之一，如果你是一个彻头彻尾的新手，或者还没掌握ES6，那请先学习一下阮一峰的[《ECMAScript 6 入门》](http://es6.ruanyifeng.com/)。
 
 如果你非常忙，没有时间把书看完，那么我建议你着重阅读如下的小节。在通读全书的时候，也请着重阅读如下小节。
@@ -24,6 +26,8 @@ Jigsaw的组件大大弱化了开发者的 HTML5 / CSS3 的技能要求，因此
 以上列表是我假设你已经熟悉了ES5的前提下给出来的，如果你连ES5都不熟悉，那还是请乖乖的把整本书看完吧。
 
 ### TS相关知识
+
+[点击查看TS基础知识](/vmax-studio/awade/docs/basic-knowledge/ts-basic)
 
 所有基于Angular或者Jigsaw的页面都必须采用[TypeScript](https://www.tslang.cn)语言编码，如果你还不了解它，那请先[学习](https://www.tslang.cn/docs/home.html)一下这门语言。
 
@@ -78,13 +82,16 @@ Angular里涉及到的有
 
 当然，和其他所有知识一样，对他们了解、掌握的越多，对你写代码越有利！
 
-
+### OOP相关知识
+[点击查看OPP基础知识](/rdk/app/ui-designer/docs/basic-knowledge/oop-basic.zip)
 
 ## IDE选择建议
 
 工欲善其事必先利其器，挑选一个好的IDE你就已经迈出了坚实的一步，[WebStorm](https://www.jetbrains.com/webstorm/)和[VSCode](https://code.visualstudio.com/)都是不错的选择。
 
 ## Angular
+
+[点击查看Angular基础知识](/vmax-studio/awade/docs/basic-knowledge/ng-basic)
 
 Angular的概念很多，知识点也不少，但值得庆幸是你无需学习完所有的概念才能开工，只要学习和理解“**模块**”和“**组件**”两大概念，即可开工干活了，如果你要开发的是一个SPA（单页应用），那么还需要再学习“**路由**”的相关知识。
 
@@ -99,8 +106,43 @@ Angular所有概念的学习材料，都可以在 <https://angular.cn/docs> 找�
 
 ## Jigsaw
 
-待补充。。。
+### 下载node
 
+[下载node6](https://nodejs.org/download/release/v6.14.4/)
+[下载node8](https://nodejs.org/download/release/v8.12.0/)
+
+下载`.msi`文件，双击安装，安装完成后，在命令行执行`node -v` `npm -v`，出现版本号就说明安装成功。
+
+中兴没有外网的人员，请点击参考[配置npm镜像](https://dev.zte.com.cn/topic/#/45132)
+
+### 下载seed工程并启动
+
+在命令行执行
+
+```
+    git clone https://github.com/rdkmaster/jigsaw-seed.git // 克隆seed工程
+    cd jigsaw-seed // 进入项目根目录
+    npm install // 下载依赖包，需要等一些时间
+    npm start // 启动工程
+```
+
+> 点击查看[seed工程](https://github.com/rdkmaster/jigsaw-seed)
+
+访问网页`localhost:4200`，如果能出现welcome的页面，就说明工程已启动起来了，整个jigsaw的开发环境也搭建好了。
+
+### 查看组件demo
+
+[demo地址](http://rdk.zte.com.cn/components/introduce)
+
+> 我们为每个组件写了大量的demo，组件的功能大部分都显示在demo里，请仔细看。
+
+> demo中可以查看示例和API，示例里可以点击'查看&编辑DEMO源码'查看源码。
+
+### 简单的使用教程
+
+[教程地址](https://github.com/rdkmaster/jigsaw/blob/master/docs/tourist/index.md)
+
+[代码地址](https://github.com/rdkmaster/jigsaw-tourist)
 
 ## 更新记录
 - 20180218 新建。

@@ -34,6 +34,14 @@
                 "api": "/jigsaw/doc/fragments/component/JigsawAlert.html"
             },
             {
+                "label": "Auto Input 提示输入框", "router": "auto-complete-input",
+                "api": "/jigsaw/doc/fragments/component/JigsawAutoCompleteInput.html"
+            },
+            {
+                "label": "Breadcrumb 面包屑", "router": "breadcrumb",
+                "api": "/jigsaw/doc/fragments/component/JigsawBreadcrumb.html"
+            },
+            {
                 "label": "Button 按钮", "router": "button",
                 "api": "/jigsaw/doc/fragments/component/JigsawButton.html"
             },
@@ -126,6 +134,10 @@
                 "api": "/jigsaw/doc/fragments/component/JigsawRangeTime.html"
             },
             {
+                "label": "Rate 打分", "router": "rate",
+                "api": "/jigsaw/doc/fragments/component/JigsawRateComponent.html"
+            },
+            {
                 "label": "Scrollbar 滚动条", "router": "scrollbar",
                 "api": "/jigsaw/doc/fragments/component/JigsawScrollbar.html"
             },
@@ -150,7 +162,7 @@
                 "api": "/jigsaw/doc/fragments/component/JigsawSwitch.html"
             },
             {
-                "label": "Tab 选项卡", "router": "tabs",
+                "label": "Tab 选项卡", "router": "tab",
                 "api": "/jigsaw/doc/fragments/component/JigsawTab.html"
             },
             {
@@ -160,6 +172,10 @@
             {
                 "label": "Tag 标签", "router": "tag",
                 "api": "/jigsaw/doc/fragments/component/JigsawTag.html"
+            },
+            {
+                "label": "Textarea 多行文本框", "router": "textarea",
+                "api": "/jigsaw/doc/fragments/component/JigsawTextarea.html"
             },
             {
                 "label": "Tile 平铺", "router": "tile",
@@ -225,6 +241,10 @@
     },
     {
         "category": "指令", "nodes": [
+            {
+                "label": "漂浮", "router": "float",
+                "api": "/jigsaw/doc/fragments/directive/JigsawFloat.html"
+            },
             {
                 "label": "内联HTML", "router": "trusted-html",
                 "api": "/jigsaw/doc/fragments/directive/JigsawTrustedHtml.html"
