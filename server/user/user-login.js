@@ -49,7 +49,7 @@
                     uid: "12345678"
                 }
             }else{  //公司接口验证工号
-                var userLoginURL = 'http://10.9.233.35:80/xplan/common/authentication';
+                var userLoginURL = 'http://10.9.225.190:80/xplan/common/authentication';
                 authUser = Rest.post(userLoginURL,requestUser);
                 authUser =JSON.parse(authUser);
             }

@@ -112,7 +112,7 @@
                         "fromwho": sendData.author[1],
                         "towho": {"resId": "", "indv": subUserArr}
                     };
-                    result = Rest.post("http://10.9.233.35:20080/xplan/mail/send", postDate, options, true);
+                    result = Rest.post("http://10.9.225.190:20080/xplan/mail/send", postDate, options, true);
 
                     if (result === "\"done\"") {
                         Shell.execute('sh ' + sitePath + '/rdk/app/ued/build/scripts/git-log-last.sh ' + resourcePath, 0)
